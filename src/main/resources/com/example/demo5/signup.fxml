@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #3b393a;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.SignUpController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="90.0" prefWidth="606.0" style="-fx-background-color: #292828;">
+         <children>
+            <Label layoutX="166.0" layoutY="24.0" text="Create an account:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Light" size="36.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="36.0" layoutY="61.0" selectionFill="#fffefe" size="40" stroke="TRANSPARENT" text="" textAlignment="CENTER" wrappingWidth="63.39996337890625">
+               <effect>
+                  <Bloom />
+               </effect></FontAwesomeIconView>
+            <Button fx:id="backToLogin" layoutX="563.0" mnemonicParsing="false" style="-fx-background-color: #292828;" text="Back" textAlignment="CENTER" textFill="WHITE">
+               <effect>
+                  <Bloom />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="signUp" layoutX="273.0" layoutY="349.0" mnemonicParsing="false" style="-fx-background-color: #4a4a4a; -fx-background-radius: 7;" text="Signup" textFill="WHITE" />
+      <TextField fx:id="first_name" layoutX="226.0" layoutY="223.0" promptText="first name" style="-fx-background-color: #4a4a4a;" />
+      <ChoiceBox fx:id="choiceBox" layoutX="225.0" layoutY="268.0" prefWidth="150.0" style="-fx-background-color: #4a4a4a;" />
+      <TextField fx:id="usernameField" layoutX="226.0" layoutY="143.0" promptText="username" style="-fx-background-color: #4a4a4a;" />
+      <Label layoutX="230.0" layoutY="118.0" text="(don't use your real name)" textFill="#ffffff82" />
+      <PasswordField fx:id="passwordField" layoutX="120.0" layoutY="181.0" promptText="password" style="-fx-background-color: #4a4a4a;" />
+      <TextField fx:id="second_name" layoutX="328.0" layoutY="181.0" promptText="second name" style="-fx-background-color: #4a4a4a;" />
+      <Label fx:id="choiceboxAlert" layoutX="215.0" layoutY="303.0" prefHeight="18.0" prefWidth="194.0" textAlignment="CENTER" textFill="RED" />
+      <Label fx:id="usernameAlert" layoutX="213.0" layoutY="99.0" prefHeight="18.0" prefWidth="240.0" textFill="RED" />
+      <Label fx:id="passwordAlert" layoutX="113.0" layoutY="207.0" prefHeight="18.0" prefWidth="163.0" textAlignment="CENTER" textFill="RED" />
+      <Label fx:id="secondnameAlert" layoutX="312.0" layoutY="207.0" prefHeight="18.0" prefWidth="229.0" textFill="RED" />
+      <Label fx:id="firstnameAlert" layoutX="230.0" layoutY="249.0" prefHeight="18.0" prefWidth="139.0" textAlignment="CENTER" textFill="RED" />
+   </children>
+</AnchorPane>
